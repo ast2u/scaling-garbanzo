@@ -66,4 +66,4 @@ jobs:
     needs: [production]
     steps:
       - run: echo "- Test the artifact in the production environment"
-      - run: echo "# All tests and deployments have completed successfully!"
+      - run: echo "# All tests and deployments have completed successfully!" >> $GITHUB_STEP_SUMMARY
